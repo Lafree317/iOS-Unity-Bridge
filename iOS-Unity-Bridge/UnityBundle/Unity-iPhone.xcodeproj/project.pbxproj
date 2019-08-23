@@ -63,6 +63,7 @@
 		69DE41E79229211899105F78 /* System.Xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C44C4B86B5C88905212D8ACD /* System.Xml.cpp */; };
 		6ED14B6AA24C0921FA4FF0F8 /* libiPhone-lib.dylib in Copy Shared Libraries */ = {isa = PBXBuildFile; fileRef = B4964D4AA78DBE85219AEB16 /* libiPhone-lib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		71CF44F499716EE4948A7236 /* GenericMethods.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F049B58B80B787FA6E899A /* GenericMethods.cpp */; };
+		74384476AC3916E49FC6ED68 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0D44C9AF0652151D7C0FE6 /* Test.m */; };
 		761D42748CAC387A03E9C921 /* Il2CppGenericMethodTable.c in Sources */ = {isa = PBXBuildFile; fileRef = E5A24F68AFCA18632B983BB6 /* Il2CppGenericMethodTable.c */; };
 		771B4F358132841D0FB40B56 /* UnityEngine.CoreModule_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = FF6D44BE9BED73F1D8727449 /* UnityEngine.CoreModule_CodeGen.c */; };
 		799F4E96BA21EBC787EF14BA /* Il2CppGenericComDefinitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEDB4FACA221E65E1FE9B49B /* Il2CppGenericComDefinitions.cpp */; };
@@ -235,6 +236,7 @@
 		147444A38E7E611D4D4B03EF /* System.Diagnostics.StackTrace_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System.Diagnostics.StackTrace_CodeGen.c; path = Classes/Native/System.Diagnostics.StackTrace_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		14A543128A6046A98096F28B /* mscorlib11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib11.cpp; path = Classes/Native/mscorlib11.cpp; sourceTree = SOURCE_ROOT; };
 		1859EA9A19214E7B0022C3D3 /* MetalHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalHelper.mm; sourceTree = "<group>"; };
+		1B0D44C9AF0652151D7C0FE6 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = Libraries/Test.m; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Unity-Target-New.app"; path = "iOS-Unity-Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B04E04B16BF017DFDB515E /* Mono.Security_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Mono.Security_CodeGen.c; path = Classes/Native/Mono.Security_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -409,6 +411,7 @@
 		B1E74AEB8BF6147C3BB137EF /* UnresolvedVirtualCallStubs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnresolvedVirtualCallStubs.cpp; path = Classes/Native/UnresolvedVirtualCallStubs.cpp; sourceTree = SOURCE_ROOT; };
 		B4964D4AA78DBE85219AEB16 /* libiPhone-lib.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libiPhone-lib.dylib"; path = "Libraries/libiPhone-lib.dylib"; sourceTree = SOURCE_ROOT; };
 		B7E942B6B1F5938AE92FE030 /* System.Xml_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System.Xml_CodeGen.c; path = Classes/Native/System.Xml_CodeGen.c; sourceTree = SOURCE_ROOT; };
+		B95E4A498B1C84A5276C5DB5 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Test.h; path = Libraries/Test.h; sourceTree = SOURCE_ROOT; };
 		BB0743DAA5E4561F8A82704E /* System1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System1.cpp; path = Classes/Native/System1.cpp; sourceTree = SOURCE_ROOT; };
 		BB324AA5A17BC2368A5432E3 /* mscorlib10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib10.cpp; path = Classes/Native/mscorlib10.cpp; sourceTree = SOURCE_ROOT; };
 		BCCA4C5AA3A57E8B9144EA17 /* mscorlib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib.cpp; path = Classes/Native/mscorlib.cpp; sourceTree = SOURCE_ROOT; };
@@ -816,6 +819,8 @@
 				03F528621B447098000F4FB8 /* Il2CppOptions.cpp */,
 				B4964D4AA78DBE85219AEB16 /* libiPhone-lib.dylib */,
 				88074824AADA0C5714A3216E /* libil2cpp.a */,
+				1B0D44C9AF0652151D7C0FE6 /* Test.m */,
+				B95E4A498B1C84A5276C5DB5 /* Test.h */,
 			);
 			path = Libraries;
 			sourceTree = SOURCE_ROOT;
@@ -1095,6 +1100,7 @@
 				F3CD4103940E19455F56DF2E /* mscorlib_CodeGen.c in Sources */,
 				ADDD463AAD7F60B70D756E01 /* netstandard.cpp in Sources */,
 				B6D94973AD25C8976BAE1ED0 /* netstandard_CodeGen.c in Sources */,
+				74384476AC3916E49FC6ED68 /* Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

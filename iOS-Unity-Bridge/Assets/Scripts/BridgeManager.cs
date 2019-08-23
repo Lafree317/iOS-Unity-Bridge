@@ -9,12 +9,25 @@ public class BridgeManager : MonoBehaviour
     public Text bridgeMessage;
     [DllImport("__Internal")]
     private static extern void unityToIOS (string str);
-    
+
+    // 导入OC文件
+    [DllImport("__Internal")]
+    static extern void outputAppendString (string str1, string str2);
+
     // 按钮点击后切换到iOS界面发送一个字符串
-    public void ButtonClick()
+    public void ButtonClickJumpToiOS()
     {
+        #if UNITY_IPHONE  
         unityToIOS("Hello iOS");
+        #endif
     } 
+
+    public void ButtonClickCalliOS()
+    {
+        #if UNITY_IPHONE    
+        outputAppendString("Hello", "World");
+        #endif
+    }
 
         // 向右转函数接口
     void turnRight(string num){

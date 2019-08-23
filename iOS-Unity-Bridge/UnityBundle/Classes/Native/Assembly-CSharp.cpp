@@ -35,7 +35,10 @@ struct Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA;
 struct Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030;
 
 IL2CPP_EXTERN_C String_t* _stringLiteral44E0317F95954F1F40051F5304A6C0E0EA0F2E89;
-IL2CPP_EXTERN_C const uint32_t BridgeManager_ButtonClick_m1A4C81F77F54C1F46836C5693A7E752CF6BF8D54_MetadataUsageId;
+IL2CPP_EXTERN_C String_t* _stringLiteral70C07EC18EF89C5309BBB0937F3A6342411E1FDD;
+IL2CPP_EXTERN_C String_t* _stringLiteralF7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0;
+IL2CPP_EXTERN_C const uint32_t BridgeManager_ButtonClickCalliOS_m7348A3F5B65226B3BC69E0696378BC18D0CA6E3E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t BridgeManager_ButtonClickJumpToiOS_m10A939C52976E50051CC585D592A65EAB590CF9F_MetadataUsageId;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -527,6 +530,8 @@ public:
 
 // System.Void BridgeManager::unityToIOS(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_unityToIOS_mF881BF90C9CB444FCCE8B7D588DE5FE2912DFD91 (String_t* ___str0, const RuntimeMethod* method);
+// System.Void BridgeManager::outputAppendString(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_outputAppendString_mFC84E01E2D8E56F7E9C453804ABB1BB272DF1127 (String_t* ___str10, String_t* ___str21, const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
@@ -568,17 +573,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_unityToIOS_mF881BF90C9CB44
 	____str0_marshaled = NULL;
 
 }
-// System.Void BridgeManager::ButtonClick()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_ButtonClick_m1A4C81F77F54C1F46836C5693A7E752CF6BF8D54 (BridgeManager_tDD50CE5B89C243C2A22D7BAADF5DD385FB72DE89 * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C void DEFAULT_CALL outputAppendString(char*, char*);
+// System.Void BridgeManager::outputAppendString(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_outputAppendString_mFC84E01E2D8E56F7E9C453804ABB1BB272DF1127 (String_t* ___str10, String_t* ___str21, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*, char*);
+
+	// Marshaling of parameter '___str10' to native representation
+	char* ____str10_marshaled = NULL;
+	____str10_marshaled = il2cpp_codegen_marshal_string(___str10);
+
+	// Marshaling of parameter '___str21' to native representation
+	char* ____str21_marshaled = NULL;
+	____str21_marshaled = il2cpp_codegen_marshal_string(___str21);
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(outputAppendString)(____str10_marshaled, ____str21_marshaled);
+
+	// Marshaling cleanup of parameter '___str10' native representation
+	il2cpp_codegen_marshal_free(____str10_marshaled);
+	____str10_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___str21' native representation
+	il2cpp_codegen_marshal_free(____str21_marshaled);
+	____str21_marshaled = NULL;
+
+}
+// System.Void BridgeManager::ButtonClickJumpToiOS()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_ButtonClickJumpToiOS_m10A939C52976E50051CC585D592A65EAB590CF9F (BridgeManager_tDD50CE5B89C243C2A22D7BAADF5DD385FB72DE89 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (BridgeManager_ButtonClick_m1A4C81F77F54C1F46836C5693A7E752CF6BF8D54_MetadataUsageId);
+		il2cpp_codegen_initialize_method (BridgeManager_ButtonClickJumpToiOS_m10A939C52976E50051CC585D592A65EAB590CF9F_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		BridgeManager_unityToIOS_mF881BF90C9CB444FCCE8B7D588DE5FE2912DFD91(_stringLiteral44E0317F95954F1F40051F5304A6C0E0EA0F2E89, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void BridgeManager::ButtonClickCalliOS()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BridgeManager_ButtonClickCalliOS_m7348A3F5B65226B3BC69E0696378BC18D0CA6E3E (BridgeManager_tDD50CE5B89C243C2A22D7BAADF5DD385FB72DE89 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BridgeManager_ButtonClickCalliOS_m7348A3F5B65226B3BC69E0696378BC18D0CA6E3E_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		BridgeManager_outputAppendString_mFC84E01E2D8E56F7E9C453804ABB1BB272DF1127(_stringLiteralF7FF9E8B7BB2E09B70935A5D785E0CC5D9D0ABF0, _stringLiteral70C07EC18EF89C5309BBB0937F3A6342411E1FDD, /*hidden argument*/NULL);
 		return;
 	}
 }
